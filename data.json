@@ -1,0 +1,226 @@
+[
+	{
+		"price": 500000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Elm Street"
+	},
+	{
+		"price": 650000,
+		"fireplaces": 3,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Maple Avenue"
+	},
+	{
+		"price": 420000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Oak Road"
+	},
+	{
+		"price": 800000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Pine Street"
+	},
+	{
+		"price": 550000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Cedar Lane"
+	},
+	{
+		"price": 720000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Birch Avenue"
+	},
+	{
+		"price": 600000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Willow Road"
+	},
+	{
+		"price": 475000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Sycamore Street"
+	},
+	{
+		"price": 700000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Hickory Lane"
+	},
+	{
+		"price": 750000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Walnut Avenue"
+	},
+	{
+		"price": 480000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Chestnut Road"
+	},
+	{
+		"price": 520000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Beech Street"
+	},
+	{
+		"price": 580000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Poplar Lane"
+	},
+	{
+		"price": 430000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Magnolia Avenue"
+	},
+	{
+		"price": 670000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Sycamore Street"
+	},
+	{
+		"price": 490000,
+		"fireplaces": 1,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Cedar Lane"
+	},
+	{
+		"price": 680000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Pine Street"
+	},
+	{
+		"price": 525000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Willow Road"
+	},
+	{
+		"price": 610000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Maple Avenue"
+	},
+	{
+		"price": 520000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Oak Road"
+	},
+	{
+		"price": 720000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Elm Street"
+	},
+	{
+		"price": 530000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Hickory Lane"
+	},
+	{
+		"price": 490000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Chestnut Road"
+	},
+	{
+		"price": 570000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Beech Street"
+	},
+	{
+		"price": 455000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Poplar Lane"
+	},
+	{
+		"price": 640000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Willow Road"
+	},
+	{
+		"price": 520000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Magnolia Avenue"
+	},
+	{
+		"price": 740000,
+		"fireplaces": 3,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Hickory Lane"
+	},
+	{
+		"price": 590000,
+		"fireplaces": 2,
+		"floors": 3,
+		"kitchens": 2,
+		"streetname": "Walnut Avenue"
+	},
+	{
+		"price": 485000,
+		"fireplaces": 1,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Cedar Lane"
+	},
+	{
+		"price": 680000,
+		"fireplaces": 3,
+		"floors": 2,
+		"kitchens": 2,
+		"streetname": "Pine Street"
+	},
+	{
+		"price": 530000,
+		"fireplaces": 2,
+		"floors": 2,
+		"kitchens": 1,
+		"streetname": "Beech Street"
+	}
+]
