@@ -5,9 +5,14 @@ fn main() {
     use machlears::prelude::*;
     // CSV of housing data. Let's predict price by fireplaces
     // Linear Regression
+
+    let json_fn = &|mach| {
+        println!("{}", serde_json::to_string_pretty(&mach).expect("deser"))
+    };
+    
     let mach = machlears::MachScaffold::setup(setup::Opts {
         
-            database: DatabaseOpt::None,
+            database: DatabaseOpt::Sqlite(ConnectOpts {}),
             // datasource: DataSource::CsvFile(PathBuf::from("C:/Users/Noah3/OneDrive/Documents/Research/ADHD/Singh2008__Beyond_polemics.pdf")),
             // datasource: DataSource::JsonData(json!(
             //     {
@@ -17,7 +22,7 @@ fn main() {
             //     }
             // ))
             datasource: DataSource::CsvFile(PathBuf::from("/foo")),
-            print_style: PrintStyle::silent(),
+            print_style: PrintStyle::Custom(json_fn),
 
         })
         .train(train::Opts {
@@ -26,6 +31,7 @@ fn main() {
         .build(build::Opts {
 
         });
+
 
 
 }

@@ -2,7 +2,7 @@ use std::path::PathBuf;
 use crate::prelude::DatabaseOpt;
 
 
-pub enum DataSource {
+pub enum DataSourceOpt {
     /// Provide a path to write to
     CsvFile(PathBuf),
     /// Provide a path to write to
@@ -90,5 +90,15 @@ pub enum DataSource {
     /// 
     /// ]
     /// ```
+    JsonData(serde_json::Value),
+}
+
+// |
+// V
+
+pub enum DataSource {
+    CsvFile(std::fs::File),
+    ExcelFile(std::fs::File),
+    JsonFile(std::fs::File),
     JsonData(serde_json::Value),
 }

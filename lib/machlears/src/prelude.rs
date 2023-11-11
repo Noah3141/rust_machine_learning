@@ -1,5 +1,4 @@
 pub use crate::models::scaffold::methods::setup::db::DatabaseOpt;
-pub use crate::models::scaffold::methods::setup::db::ConnectOpts;
 pub use crate::models::scaffold::methods::setup::ds::DataSource;
 pub use crate::models::scaffold::methods::setup::ps::PrintStyle;
 

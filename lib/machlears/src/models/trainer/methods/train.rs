@@ -1,6 +1,6 @@
-use crate::models::builder::entity::MachBuilder;
+use crate::models::{builder::entity::MachBuilder, info::entity::Info};
 
-impl super::super::entity::MachTrainer {
+impl<'a, Func> super::super::entity::MachTrainer<'a, Func> where Func: Fn(&Info) -> () {
     pub fn train(&self, opts: crate::models::trainer::methods::train::Opts) -> MachBuilder {
         MachBuilder {}
     }

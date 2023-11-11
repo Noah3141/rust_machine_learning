@@ -1,9 +1,10 @@
 use std::path::PathBuf;
 
+use sqlx::AnyConnection;
+
+
 pub enum DatabaseOpt {
-    /// Tuple (username, password)
-    Sqlite(ConnectOpts),
-    /// Include 
+    /// MySQL, Sqlite, Postgres
     ConnectionURI(String),
     /// Provide a path to write to
     CsvFile(PathBuf),
@@ -13,9 +14,12 @@ pub enum DatabaseOpt {
     None
 }
 
-pub struct ConnectOpts {
-    username: String,
-    password: String,
-    ip: String,
-    port: String,
+//  |
+//  V
+
+pub enum Database {
+    Db(AnyConnection),
+    CsvFile(csv::Writer<std::fs::File>),
+    JsonFile(std::fs::File),
+    None
 }

@@ -1,47 +1,28 @@
 use std::default;
 
+use crate::models::{active::entity::Mach, info::entity::Info};
+
 /// Choose which fields to print. 
 /// 
 /// Can be manually declared, or a preset used:
 /// 
-/// 1. `PrintStyle::default()`
-/// 2. `PrintStyle::all()`
-/// 3. `PrintStyle::silent()`
+/// 1. `PrintStyle::Default()`
+/// 2. `PrintStyle::All()`
+/// 3. `PrintStyle::Silent()`
+/// 4. `PrintStyle::Custom(func)` where `func` is a provided closure that does the printing you want given the data in `Mach`
 /// 
-pub struct PrintStyle {
-    iterations: bool,
-    epochs: bool,
-    alpha: bool,
-    weights: bool,
-}
+/// For instance, you could try the following:
+/// 
+/// ```
+///     let json_fn = &|mach| {
+///         println!("{}", serde_json::to_string_pretty(&mach).expect("deser"))
+///     };
+///     let print_style = PrintStyle::Custom(json_fn);
+/// ```
+pub enum PrintStyle<'func, Func> where Func: Fn(&Info) -> () + ?Sized {
+    Silent,
+    Default,
+    All,
+    Custom(&'func Func)
+} 
 
-impl PrintStyle {
-
-    pub fn silent() -> PrintStyle {
-        PrintStyle {
-            iterations: false,
-            epochs: false,
-            alpha: false,
-            weights: false,
-        }
-    }
-
-    pub fn default() -> PrintStyle {
-        PrintStyle {
-            iterations: false,
-            epochs: true,
-            alpha: true,
-            weights: true,
-        }
-    }
-
-    pub fn all() -> PrintStyle {
-        PrintStyle {
-            iterations: true,
-            epochs: true,
-            alpha: true,
-            weights: true,
-        }
-    }
-
-}

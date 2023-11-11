@@ -1,10 +1,6 @@
+use serde::{Serialize, Deserialize};
+
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct Mach {
-
 }
-impl Mach {
 
-    pub fn predict() {
-
-    }
-
-}
